@@ -75,11 +75,12 @@
   // clear search
   td.gsc-clear-button {
     position: absolute;
-    right: 6em;
-    top: 0.6em;
+    right: 7em;
+    top: 1.8em;
   }
   // remove google brand logo
   input.gsc-input {
+    color: #424242;
     background-image: none !important;
   }
 }
