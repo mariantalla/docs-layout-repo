@@ -1,0 +1,26 @@
+{
+  "name": "docs-layout-repo",
+  "version": "1.0.0",
+  "description": "The centralized layout repository for Pivotal and Cloud Foundry documentation, for use with [Bookbinder](https://github.com/pivotal-cf/bookbinder).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pivotal-cf/docs-layout-repo.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/pivotal-cf/docs-layout-repo/issues"
+  },
+  "homepage": "https://github.com/pivotal-cf/docs-layout-repo#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "dr-frankenstyle": "^0.2.7",
+    "jquery": "^2.2.1"
+  },
+  "dependencies": {
+    "pui-css-all": "^3.2.0"
+  }
+}
