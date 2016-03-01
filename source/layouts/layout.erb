@@ -83,6 +83,23 @@
           </ul>
         </nav>
       </div>
+      <div class="home">
+        <% unless current_page.data.title %>
+          <div class="hero">
+            <p class="type-dark-11 txt-c h1 mvn em-low" style="max-width:800px;margin:50px auto 0 auto !important;">
+              <%= vars.hero_text %>
+            </p>
+          </div>
+        <% end %>
+        <div class="container">
+          <%= yield %>
+          <footer class="site-footer-links">
+            <div class="clearfix">
+              <%= partial 'layouts/book-footer' %>
+            </div>
+          </footer>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -230,7 +247,7 @@
         <div class="to-top" id="js-to-top">
           <a href="#top" title="back to top"></a>
         </div>
-        <%= yield %>
+        <%#= yield %>
         <%= render_repo_link(include_environments: ['staging', 'acceptance', 'cloudfoundry', 'localhost']) %>
       </main><!--end of content-->
 
@@ -262,12 +279,6 @@
 </div><!--end of viewport-->
 
 <div id="scrim"></div>
-
-<div class="container">
-  <footer class="site-footer-links">
-    <%= partial 'layouts/book-footer' %>
-  </footer>
-</div><!--end of container-->
 
 </body>
 </html>
