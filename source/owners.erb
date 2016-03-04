@@ -1,0 +1,19 @@
+---
+title: Owners
+---
+<table>
+  <tr>
+    <th>Path</th>
+    <th>Owner</th>
+  </tr>
+  <% owners.each do |path, owners| %>
+    <tr>
+      <td>
+        <%= path %>
+      </td>
+      <td>
+        <%= owners.join(', ') %>
+      </td>
+    </tr>
+  <% end %>
+</table>
